@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gung.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tip Calculator"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textColor="#ef0802"
+            android:gravity="bottom"
+            android:textAlignment="center"
+            android:paddingTop="16dp"/>
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#ffff0e"
+            android:text="RESET" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter bill amount"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="#395723"
+                android:layout_margin = "16dp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/bill_amount_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:textAlignment="center"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tip Percentage"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="#395723"
+                android:layout_margin = "16dp"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="4"
+                android:paddingRight="48dp"
+                android:paddingLeft="48dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/percentage_10_value_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="10%"
+                    android:textColor="#000000"
+                    android:background="#999999"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/percentage_15_value_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="15%"
+                    android:textColor="#000000"
+                    android:background="#999999"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/percentage_20_value_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="20%"
+                    android:textColor="#000000"
+                    android:background="#999999"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/percentage_25_value_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="25%"
+                    android:textColor="#000000"
+                    android:background="#999999"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="48dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="other"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="#395723"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/tip_percentage_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="24dp"
+                    android:textAlignment="center"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of People"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="#395723"
+                android:layout_margin = "16dp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/num_people_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:textAlignment="center"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/calculate_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="#000000"
+                android:layout_margin = "16dp"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:layout_margin = "16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Each person pays:"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/pay_amount_result_value_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Each person pays:"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
